@@ -1,0 +1,48 @@
+# Aprendizaje Automático y Minería de Datos
+# Entorno Conda para la asignatura
+# Autor: Federico Peinado (2026)
+name: aam
+
+# Conda Forge garantiza binarios optimizados e idénticos en Windows, macOS y Linux
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Versión base de Python, rápida, madura, estable y compatible
+  #- python=3.12.*
+  # Para ML-Agents se necesita esta otra
+  - python=3.10.12
+
+  # Integración con VS Code y Jupyter Notebooks (detección inmediata de kernel ejecutable)
+  - ipykernel
+  - ipywidgets>=8.1
+  - msgpack-python # Añadido expresamente para evitar conflicto con jupyter_client
+
+  # Manipulación y cálculo de datos (ya en el ecosistema NumPy 2.x)
+  # Lo ideal sería usar el ecosistema de numpy>=2.0, pero PyTorch requiere algo más clásico
+  - numpy>=1-26,<2.0
+  - pandas>=2.2
+  - scipy>=1.11
+
+  # Minería de datos y Aprendizaje Automático
+  - scikit-learn>=1.4
+  - statsmodels
+
+  # Visualización de datos
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - plotly>=5.20
+
+  # Aprendizaje por refuerzo
+  - pytorch>=2.2.0
+  - tensorboard
+  - protobuf<5.0
+
+  # Opcional: Si usas bibliotecas instalables solo vía PyPI/pip
+  # Por ejemplo ML-Agents vía Pip sobre el entorno de Conda
+  - pip
+  - pip:
+    - mlagents==1.1.0
+    - mlagents-envs==1.1.0
+    - gym-unity
