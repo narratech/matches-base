@@ -55,7 +55,7 @@ E. Agrupamiento de los errores mediante el algoritmo k-Means en un espacio reduc
 
 ## Referencias
 * Yi Lan Ma: [League of Legends Diamond Ranked Games (10 min)](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-diamond-ranked-games-10-min) (Kaggle)
-* [Riot Games]([https://steamspy.com/](https://www.riotgames.com/es))
-* [League of Legends Official Site]([https://store.steampowered.com/](https://www.leagueoflegends.com/))
+* [Riot Games](https://www.riotgames.com/es)
+* [League of Legends Official Site](https://www.leagueoflegends.com/)
 
 
